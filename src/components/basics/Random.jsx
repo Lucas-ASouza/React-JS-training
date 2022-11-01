@@ -8,16 +8,16 @@ const { min, max } = props;
 
     return (
         <div>
-            <h2>Valor Aleatório</h2>
+            <h2>Random Number</h2>
             <p>
-                <strong>Valor Mínimo:</strong> {min}
+                <strong>Minimum value:</strong> {min}
 
             </p>
             <p>
-                <strong>Valor Máximo:</strong> {max}
+                <strong>Maximum Value:</strong> {max}
             </p>
             <p>
-                <strong>Valor Escolhido:</strong> {aleatorio}
+                <strong>Chosen Value:</strong> {aleatorio}
             </p>
         </div>
     )

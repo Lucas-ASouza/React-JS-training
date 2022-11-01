@@ -1,16 +1,15 @@
 
 
 export default function ComParametro(props) {
-    const status = props.nota >= 5 ? 'Aprovado' : 'Reprovado'
+    const status = props.nota >= 5 ? 'Aproved' : 'Reproved'
     return (
         <div>
             <h2>{props.titulo}</h2>
             <p>
-                <strong>
-                    <h3>
-                        {props.aluno} tem nota {props.nota} e está {status}
-                    </h3>
-                </strong>
+                <h3>
+                    {props.aluno}´s grades are {props.nota} and therefore is {status}
+                </h3>
+                
             </p>
         </div>
     )
