@@ -8,7 +8,7 @@ export default (props) => {
 
         return product.map((product, i) => {
             return (
-                <tr key={product.id} className={i % 2 == 0 ? 'Even' : 'Odd'}>
+                <tr key={product.id} className={i % 2 === 0 ? 'Even' : 'Odd'}>
                     <td>{product.id}</td>
                     <td>{product.name}</td>
                     <td>{product.price.toFixed(2).replace('.',',')}</td>

@@ -2,6 +2,7 @@ import React from "react"
 import './App.css'
 import Card from "./layout/Card"
 
+import EvenOrOdd from "./conditional/EvenOrOdd"
 import ProductTable from "./repetition/ProductTable"
 import StudentList from "./repetition/StudentList"
 import Familia from "./basics/Familia"
@@ -17,6 +18,14 @@ export default () =>
         <h1>Fundamentals React</h1>
 
         <div className="Exercises">
+
+        <Card titulo ="#09 - " color="#982395">
+            <EvenOrOdd number="1"></EvenOrOdd>
+        </Card>    
+        <Card titulo ="#08 - Conditional Render" color="#982395">
+            <EvenOrOdd number="1"></EvenOrOdd>
+        </Card>
+
         <Card titulo ="#07 - Repetition Chalenge" color="#3A9AD9">
             <ProductTable></ProductTable>
         </Card>
