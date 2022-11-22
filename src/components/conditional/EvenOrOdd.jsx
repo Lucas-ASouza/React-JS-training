@@ -7,7 +7,8 @@ export default props => {
         <div>
             { isEven ? 
                 <span>Even</span> : 
-                <span>Odd</span>}
+                <span>Odd</span>
+            }
         </div>
     )
 }

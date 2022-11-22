@@ -2,6 +2,10 @@ import React from "react"
 import './App.css'
 import Card from "./layout/Card"
 
+
+import IndirectChild from "./comunication/IndirectChild"
+import DirectParent from "./comunication/DirectParent"
+import UserInfo from "./conditional/UserInfo"
 import EvenOrOdd from "./conditional/EvenOrOdd"
 import ProductTable from "./repetition/ProductTable"
 import StudentList from "./repetition/StudentList"
@@ -11,6 +15,7 @@ import Random from "./basics/Random"
 import Primeiro from "./basics/First"
 import ComParametro from "./basics/ComParametro"
 import Fragment from "./basics/Fragment"
+import IndirectParent from "./comunication/IndirectParent"
 
 export default () =>
 
@@ -19,11 +24,17 @@ export default () =>
 
         <div className="Exercises">
 
-        <Card titulo ="#09 - " color="#982395">
-            <EvenOrOdd number="1"></EvenOrOdd>
-        </Card>    
+        <Card titulo ="#10 - Indirect Comunication" color="#8BAD39">
+            <IndirectParent></IndirectParent>
+        </Card>
+
+        <Card titulo ="#09 - Direct Comunication" color="#182943">
+            <DirectParent></DirectParent>
+        </Card>
+   
         <Card titulo ="#08 - Conditional Render" color="#982395">
-            <EvenOrOdd number="1"></EvenOrOdd>
+            <EvenOrOdd number="2"></EvenOrOdd>
+            <UserInfo user={{ name: 'Afonso' }}/>
         </Card>
 
         <Card titulo ="#07 - Repetition Chalenge" color="#3A9AD9">
