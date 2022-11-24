@@ -5,6 +5,7 @@ class Counter extends React.Component {
             number: this.props.initialNumber
     }
 
+    
     inc= () => {
         this.setState({
             number: this.state.number + 1
