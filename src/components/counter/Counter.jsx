@@ -20,7 +20,7 @@ class Counter extends React.Component {
                 <button onClick={this.inc}>+</button>
             </div>
         )
-    }  
+    }                              
 }
 
 export default Counter 
